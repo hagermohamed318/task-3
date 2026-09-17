@@ -1,0 +1,114 @@
+
+
+ ايه HTML ؟
+يعنيHTML اختصار ل Hyper Text Markup Language
+هي مش لغة برمجة، هي لغة هيكلة بنبني بيها اي موقع على النت. اي صفحة بنفتحها اساسها html.
+
+فايدتها ايه؟
+من غيرها مفيش موقع هيتعرض. هي اللي بتعرض النصوص والصور والفيديوهات والجداول والفورم.
+
+هيكل الصفحة الاساسي:
+<!DOCTYPE html>
+<html> -> بداية الصفحة كلها
+<head> -> فيه معلومات عن الصفحة مش بتظهر
+  <meta charset="UTF-8"> -> الترميز عشان العربي يظهر
+  <title> -> اسم الصفحة اللي فوق في التاب
+</head>
+<body> -> كل حاجة هتظهر للمستخدم جوه ال body
+</body>
+</html>
+
+ملحوظة: اختصار ! + Tab بيعمل الهيكل كله لوحده
+
+---
+
+اول حاجة: العناوين Headings
+<h1> اكبر عنوان </h1>
+<h2> عنوان اصغر من h1 </h2>
+<h3> لحد h6 كل ما الرقم يكبر الحجم يصغر
+
+الفقرات:
+<p> دي فقرة نصية عادية بنكتب جواها اي كلام </p>
+
+تنسيق النص:
+<b> bold - تخلي النص تخين </b>
+<strong> نفس ال bold بس ليها اهمية اكبر لمحركات البحث </strong>
+<i> italic - نص مائل </i>
+<em> emphasized - نفس ال i بس بتأكد على الكلام </em>
+<mark> تظليل النص بلون اصفر </mark>
+<u> underline - خط تحت النص </u>
+<small> تصغير النص </small>
+<del> خط في نص الكلام عشان يبان انه اتمسح </del>
+<ins> اضافة نص جديد </ins>
+<sub> تنزيل النص لتحت زي الارقام الصغيرة في الكيمياء H2O </sub>
+<sup> رفع النص لفوق زي الاس 2^2 </sup>
+
+اللينكات والصور:
+<a href="https://google.com" target="_blank" title="روح لجوجل"> اضغط هنا </a>
+href : هو اللينك نفسه
+target="_blank" : يفتح اللينك في صفحة جديدة
+title : كلام بيظهر لما اقف بالماوس
+
+<img src="img/photo.jpg" alt="وصف الصورة">
+لو الصورة مظهرتش ال alt بيظهر مكانها
+
+القوائم Lists:
+<ul> قائمة غير مرتبة - نقط </ul>
+<ol> قائمة مرتبة - ارقام </ol>
+<li> عنصر من القائمة </li>
+
+<ol type="A" start="3" reversed> -> type نوع الترقيم، start يبدأ من كام، reversed عكس الترتيب
+<li value="10"> -> يبدأ من القيمة دي
+
+<dl> : قائمة وصفية
+<dt> : المصطلح
+<dd> : وصف المصطلح
+</dl>
+
+الجداول Table:
+<table> بداية الجدول </table>
+<thead> رأس الجدول </thead>
+<tbody> جسم الجدول </tbody>
+<tfoot> نهاية الجدول </tfoot>
+<tr> صف </tr>
+<td> خلية </td>
+<th> عنوان عمود
+
+الفورم Forms - اهم جزء:
+<form> 
+  <input type="text">
+  <input type="password">
+  <input type="checkbox"> -> اختيار اكتر من واحد
+  <input type="radio"> -> اختيار واحد بس
+  <input type="file"> -> رفع ملف
+  <input type="search"> -> حقل بحث
+  <input type="url"> -> لازم يدخل لينك
+  <input type="date"> -> تاريخ
+  <input type="month"> -> شهر وسنة
+  <input type="time"> -> وقت
+  <select> قائمة اختيارات
+    <option value="1"> اختيار 1 </option>
+    <option selected> هيبقى هو المختار </option>
+  </select>
+  <optgroup label="مجموعة"> تقسيم الاختيارات </optgroup>
+  <textarea cols="30" rows="10"> مساحة كتابة كبيرة </textarea>
+  <datalist> شبه ال select بس فيها بحث </datalist>
+  <button> زرار </button>
+</form>
+
+سمات Attributes مهمة:
+hidden : اخفاء العنصر
+novalidate : في ال form عشان متعملش تحقق
+multiple : اختيار اكتر من حاجة في select
+cols و rows : حجم ال textarea
+q : اقتباس صغير
+blockquote : اقتباس كبير
+wbr : كسر كلمة طويلة
+bdi : عزل اتجاه النص
+code : كتابة كود
+pre : بيحافظ على المسافات زي ما هي
+iframe : اعرض صفحة جوه صفحتي
+link rel="stylesheet" href="style.css" : ربط ملف css وبيتكتب في ال head
+
+تعليق في الكود: <!-- ده تعليق مش بيظهر -->
+اختصارات: Alt+Shift+Down نسخ السطر
