@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.navbar {
+    height: 60px;
+    padding: 15px 50px;
+
+    background-color: #3d2b2f;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.home {
+    height: 400px;
+    background:url("../imges/Flower1.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.home-content {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.home-content h1 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.home-content p {
+    margin: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin: 15px 5px;
+
+    border: 1px solid #8c5965;
+
+    background-color: #8c5965;
+    color: white;
+
+    box-shadow: 2px 2px 5px #999;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    padding: 11px 22px;
+}
+
+
+.about {
+    padding: 60px 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.image img {
+    width: 350px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border: 2px solid #ddd;
+
+    box-shadow: 2px 2px 8px #aaa;
+}
+
+.about-text {
+    width: 400px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
