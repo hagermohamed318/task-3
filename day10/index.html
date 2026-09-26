@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Website</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">Bakery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#baking">Our Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold text-white mb-3">Welcome to Our Bakery</h1>
+            <p class="lead text-light mb-4">Freshly baked bread, bagels, and cookies made every morning!</p>
+            <a href="#baking" class="btn btn-custom btn-lg">Explore Menu</a>
+        </div>
+    </section>
+    <section id="baking" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Baking</h2>
+            <p class="text-muted">Fresh baked goods made with care every day</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100">
+                    <img src="Images/bagels.jpg" class="card-img-top" alt="Bagels">
+                    <div class="card-body text-center">
+                        <h5>Bagels</h5>
+                        <p class="text-muted">Fresh baked bagels</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100">
+                    <img src="Images/bread.jpg" class="card-img-top" alt="Bread">
+                    <div class="card-body text-center">
+                        <h5>Bread</h5>
+                        <p class="text-muted">Fresh baked bread</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100">
+                    <img src="Images/cookies.jpg" class="card-img-top" alt="Cookies">
+                    <div class="card-body text-center">
+                        <h5>Cookies</h5>
+                        <p class="text-muted">Fresh baked cookies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcf9f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-navbar {
+    background-color: #5c3d2e;
+}
+
+.custom-navbar .nav-link {
+    color: #fcf9f2 !important;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #e0a96d !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(37, 36, 36, 0.5), rgba(0, 0, 0, 0.5)), url('Images/bread.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.btn-custom {
+    background-color: #cf9c65;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #523628;
+    color: #ffffff;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2, h5 {
+    color: #5c3d2e;
+    font-weight: 700;
+}
