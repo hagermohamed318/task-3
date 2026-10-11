@@ -1,0 +1,43 @@
+import { useState } from 'react'
+import Recieve from '../Recieve/Recieve';
+
+export default function Send() {
+
+    let prodArray = [
+        {id: 1, prodName: `Samsung`, price: 3000, onSale: false, desc: `Samsung Mobile Phone`, quantity: 0},
+        {id: 2, prodName: `Oppo`, price: 5000, onSale: false, desc: `Oppo Mobile Phone`, quantity: 0},
+        {id: 3, prodName: `TV`, price: 15000, onSale: true, desc: `Smart TV`, quantity: 0},
+        {id: 4, prodName: `PC`, price: 12000, onSale: true, desc: `HighEnd PC`, quantity: 0},
+        {id: 5, prodName: `Camera`, price: 10000, onSale: false, desc: `DSLR Camera`, quantity: 0},
+        {id: 6, prodName: `iPad`, price: 15000, onSale: true, desc: `Apple iPad`, quantity: 0},
+        {id: 7, prodName: `Tab`, price: 4000, onSale: false, desc: `Android Tab`, quantity: 0},
+    ]; 
+
+    let [products, setProducts] = useState(prodArray);
+
+    function deleteProduct(prodId) {
+        setProducts(products.filter(product => product.id !== prodId))
+    }
+
+    function updateCount(prodId) {
+        let newProducts = products.map(product => {
+            if(product.id === prodId){
+                return {...product, quantity: product.quantity + 1}
+            }
+            return product;
+        });
+        setProducts(newProducts);
+    }
+
+  return (
+    <>
+      <div className="container-fluid text-center bg-success p-4 my-3">
+        <div className="row g-4">
+          {products.map((product) => (
+            <Recieve key={product.id} product={product} deleteProduct={deleteProduct} updateCount={updateCount} />
+          ))}
+        </div>
+      </div>
+    </>
+  )
+}

@@ -1,19 +1,33 @@
+# StyleHub - Women's Fashion Store 2026
 
-# React Training Task - Vite
+E-commerce app for modern women's dresses built with React + Bootstrap.
 
 ## Student Info
-- Name: Hagar
-- Age: 22
-- University Year: 4th Year University
+- Name: [Hager Mohamed]
+- Project: StyleHub E-Commerce
+- Doctor Requirements: React, UI Library, Routing, Responsive
 
-## Description
-The task applies Parent & Child concept with state & props.
+## Tech Stack
+- React (Vite)
+- React Router DOM for Routing
+- Bootstrap 5 for UI
+- DummyJSON API for Products
 
-## Project Structure
-- UserParent.jsx: Parent component with useState (name, age, year)
-- UserChild.jsx: Child component that receives props
-- About.jsx & Contact.jsx: Two components displayed side by side with Flexbox
+## Features
+- Home Page: Landing page with call to action
+- Shop Page: 12 dresses from API, responsive grid (4 cols desktop, 2 tablet, 1 mobile)
+- Cart System: Add to cart, counter in navbar, total price calculation
+- About Page: Brand info
+- Responsive Design: Works on all screen sizes
 
-## How to run
+## Routes
+- `/` -> Home
+- `/shop` -> Shop / Products
+- `/about` -> About
+- `/cart` -> Cart
+
+## How to Run
+```bash
 npm install
+npm install bootstrap
 npm run dev
